@@ -21,12 +21,6 @@ const Main = () => {
   ]);
   const [toyBuyed, setToyBuyed] = useState(0);
 
-  /**
-   * const arrayGifts = ["Teddy Bear", "Big Red Ball", "Huge Bear", "Candy", "Stuffed Tiger", 
-                    "Stuffed Dragon", "Skateboard", "Toy Car", "Basketball", "Scary Mask"];
-const arrayPrices = [10, 5, 50, 8, 15, 30, 100, 25, 20, 75];
-   */
-
   const updateGifts = (index) => {
     const newArray = [...gifts];
     newArray[index].price = 0;
@@ -103,14 +97,5 @@ const arrayPrices = [10, 5, 50, 8, 15, 30, 100, 25, 20, 75];
     </>
   );
 };
-/**
- * const [state, setState] = useState({
-    buy: false,
-    add: false,
-    check: false,
-    show: false,
-    exit: false,
-    menu: false,
-  });
- */
+
 export default Main;

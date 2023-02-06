@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React from 'react';
 import BuyGift from '../bgift';
 import Menu from '../menu';
 import Input from '../input';
@@ -52,8 +52,8 @@ const Choice = ({
           <ul style={style}>
             {' '}
             {filteredList.map((gift, index) => (
-              <li key={index.id}>
-                {gift.name}: {gift.price} tickets
+              <li key={index}>
+                {index + 1}º {gift.name}: {gift.price} tickets
               </li>
             ))}
           </ul>

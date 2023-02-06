@@ -90,7 +90,7 @@ const BuyGift = ({ returnMenu, gifts, button, toyBuyed, valueTickets }) => {
         {button ? (
           <div>
             {valueTickets - gifts[toyBuyed]['price'] < 0 ? (
-              <p>Ops! How don't have suficient money to this action.</p>
+              <p>Ops! You don't have suficient money to this action.</p>
             ) : (
               <p>You has collected the: {gifts[toyBuyed]['name']}</p>
             )}
@@ -101,25 +101,4 @@ const BuyGift = ({ returnMenu, gifts, button, toyBuyed, valueTickets }) => {
   );
 };
 
-/**
- * {button ? (
-        <p>You has collected the: {gifts[toyBuyed]['name']}</p>
-      ) {valueTickets - gifts[toyBuyed]['price'] < 0 ? (
-        <p>Ops! How don't have suficient money to this action.</p>
-    )} ): null}
- */
-/**
- * const [showButton, setShowButton] = useState(true);
-
-  return (
-    <div>
-      {showButton ? (
-        <button onClick={() => setShowButton(false)}>Hide Button</button>
-      ) : (
-        <button onClick={() => setShowButton(true)}>Show Button</button>
-      )}
-      {showButton && <button>Another Button</button>}
-    </div>
-  );
- */
 export default BuyGift;
