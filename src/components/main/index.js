@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Choice from '../choice';
 
-const Script = () => {
+const Main = () => {
   const [button, setButton] = useState(false);
   const [state, setState] = useState([false, false, false, false, false, true]);
   const [tickets, setTickets] = useState(0);
@@ -26,7 +26,6 @@ const Script = () => {
                     "Stuffed Dragon", "Skateboard", "Toy Car", "Basketball", "Scary Mask"];
 const arrayPrices = [10, 5, 50, 8, 15, 30, 100, 25, 20, 75];
    */
-  const updateTickets = () => {};
 
   const updateGifts = (index) => {
     const newArray = [...gifts];
@@ -85,11 +84,6 @@ const arrayPrices = [10, 5, 50, 8, 15, 30, 100, 25, 20, 75];
           setButton(false);
           setState({ [1]: false, [5]: true });
         }, 2000);
-      } else if (button == 'Check') {
-        setState({ [2]: false, [5]: true });
-      } else if (button == 'Show') {
-        console.log('Show gifts!');
-        setState({ [3]: false, [5]: true });
       }
     };
   };
@@ -119,4 +113,4 @@ const arrayPrices = [10, 5, 50, 8, 15, 30, 100, 25, 20, 75];
     menu: false,
   });
  */
-export default Script;
+export default Main;
