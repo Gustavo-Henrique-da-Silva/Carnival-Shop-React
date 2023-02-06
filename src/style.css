@@ -1,0 +1,54 @@
+h1,
+p {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.cyan-lighten-3 {
+  background-color: #80deea !important;
+}
+
+.indigo {
+  background-color: #8064a2 !important;
+}
+
+.light-blue {
+  background-color: #03a9f4 !important;
+}
+
+.teal {
+  background-color: #009688 !important;
+}
+
+.indigo-darken {
+  background-color: #3949ab !important;
+}
+
+.lime {
+  background-color: #cddc39 !important;
+}
+
+.green {
+  background-color: #4caf50 !important;
+}
+
+.amber {
+  background-color: #ffc107 !important;
+}
+
+.orange {
+  background-color: #ff9800 !important;
+}
+
+.blue-grey {
+  background-color: #607d8b !important;
+}
+
+ul {
+  list-style-type: none !important;
+}
+
+li:before {
+  content: 'check';
+  font-family: 'Material Icons';
+}
